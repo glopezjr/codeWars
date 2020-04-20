@@ -61,4 +61,13 @@ public class CodeWarsTests
         Assertions.assertEquals(256, CodeWars.ipsBetween("10.0.0.0", "10.0.1.0"));
         Assertions.assertEquals(246, CodeWars.ipsBetween("20.0.0.10", "20.0.1.0"));
     }
+
+    @Test
+    public void intPartTest()
+    {
+        Assertions.assertEquals("Range: 1 Average: 1.50 Median: 1.50", CodeWars.part(2));
+        Assertions.assertEquals("Range: 2 Average: 2.00 Median: 2.00", CodeWars.part(3));
+        Assertions.assertEquals("Range: 3 Average: 2.50 Median: 2.50", CodeWars.part(4));
+        Assertions.assertEquals("Range: 5 Average: 3.50 Median: 3.50", CodeWars.part(5));
+    }
 }
